@@ -1,0 +1,120 @@
+/* ======= GOOGLE FONT (SORA)========= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sora:wght@400;500;600&display=swap');
+
+/* ========== VARIABLE CSS =========== */
+
+:root{
+    --header-height: 3rem;
+    --font-medium: 500;
+}
+
+/* ============  COLORS  ============= */
+
+:root{
+    --first-color: #5361ff;
+    --white-color: #fafaff;
+    --dark-color: #2a3b47;
+    --text-color: #697477;
+}
+
+
+/* ======== FONT AND TYPOGRAPHY ============ */
+
+:root{
+    --body-font: 'Sora', sans-serif;
+    --big-font-size: 6.25rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+}
+@media screen and (min-width: 768px){
+    :root{
+        --big-font-size: 10.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+/* ========== MARGINS ========== */
+
+:root{
+    --mb-1: .5;
+    --mb-2: 1;
+    --mb-3: 1.5;
+    --mb-4: 2;
+}
+
+/* ========== Z INDEX =========== */
+
+:root{
+    --z-fixed: 100;
+}
+
+/* =============  BASE  =============== */
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========= CLASS CSS ========== */
+
+.section{
+    padding: 3rem 0;
+
+}
+
+.section-title{
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--dark-color);
+    margin: var(--mb-4) 0;
+    text-align: center;
+}
+
+.section::after{
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: .18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2rem;
+    background-color: var(--first-color);
+}
