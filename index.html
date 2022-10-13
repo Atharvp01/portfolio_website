@@ -4,62 +4,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <!--===================== CSS ================--->
-    <link rel="stylesheet" href="style.css">
-
-
-    <!----===================== BOX ICONS =================-->
+    
+    <!---------------- boxicons font ------------>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-
-
-    <!--=========== TITLE ============ -->
+    
+    <!------------------ Css --------------->
+    <link rel="stylesheet" href="style.css">
     <title>Atharv Patil</title>
 </head>
 <body>
-
-    <!-- =============== HEADER ================== -->
-
-    <header class="1-header">
+    <!---------------- header ------------>
+    <header class="l-header">
         <nav class="nav bd-grid">
-
-
-            <div>
-                <a href="#" class="nav__logo">Atharv Patil</a>
+            <div class="nav__logo">
+                <a href="#home" class="nav__logo">Atharv Patil</a>
             </div>
-
-            <div class="nav__menu" id="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__items"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__items"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__items"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__items"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__items"><a href="#contact" class="nav__link">Contact</a></li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__menu__list">
+                    <li class="nav__menu__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__menu__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
                 </ul>
             </div>
-
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
         </nav>
     </header>
 
-    
-    <!-- =============== FOOTER ================== -->
-    
-    
-    
-    
-    
-    <!-- =============== SCROLL REVEAL ================== -->
+    <!---------- main section ---------->
+    <main class="1-main">
+        <!------------ home section  ----------->
+        <section class="home section" id="home">
+            <div class="home__container bd-grid" id="home-container">
+                <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt'></i>Scroll Down</a>
+                </div>          
+                <img src="assets/img(1).png" alt="home__img" class="home__img">
+            </div>
+        </section>
 
+        <!------------ About Section ------------>
+        <section class="about section" id="about">
+            <h2 class="section__title">About</h2>
+            <div class="about__container bd-grid" id="about-container">
+                <div class="about__img">
+                    <img src="assets/img(1).png" alt="about-img">
+                </div>
+                <h2 class="about__subtitle"><span>I'm Atharv Patil</span></h2>
+                <span class="about__profession">
+                    I'm a Frontend Web Developer
+                </span>
+                <p class="about__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto alias animi quod quam. Saepe, minus. Ea tempore, animi minus, quae porro ipsum reprehenderit atque impedit modi neque suscipit tenetur optio aliquid
+                </p>
+                <div class="about__social">
+                    <a href="" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="" class="about__social-icon"><i class='bx bxl-twitter' ></i></a>
+                    <a href="" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <!------------- Skills ------------>
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <div class="skills__container bd-grid">
+                <div class="skill__box">
+                    <h3 class="skills__field">
+                        <span class="skills__subtitle">Development</span>
+                    </h3>
+                    <span class="skill__name">Html</span>
+                    <span class="skill__name">Css</span>
+                    <span class="skill__name">Bootstarp</span>
+                    <span class="skill__name">Javascript</span>
+                    <span class="skill__name">jQuery</span>
+                </div>
+                <div class="skills__img">
+                    <img src="assets/skills__img.jpg" alt="skills-img" class="skills-img">
+                </div>
+
+            </div>
+        </section>
+
+        <!--------------- Portfolio section ------------>
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__img">
+                    <img src="assets/portfolio__img.jpg" alt="portfolio-img">
+                    <div class="portfolio__link">
+                        <a href="" class="portfoilo__link-name">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/portfolio__img.jpg" alt="portfolio-img">
+                    <div class="portfolio__link">
+                        <a href="" class="portfoilo__link-name">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/portfolio__img.jpg" alt="portfolio-img">
+                    <div class="portfolio__link">
+                        <a href="" class="portfoilo__link-name">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/portfolio__img.jpg" alt="portfolio-img">
+                    <div class="portfolio__link">
+                        <a href="" class="portfoilo__link-name">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/portfolio__img.jpg" alt="portfolio-img">
+                    <div class="portfolio__link">
+                        <a href="" class="portfoilo__link-name">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/portfolio__img.jpg" alt="portfolio-img">
+                    <div class="portfolio__link">
+                        <a href="" class="portfoilo__link-name">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------- Contact section ---------------->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Email</h3>
+                    <span class="contact__text">atharvpatil5177@gamil.com</span>
+                    
+                    <h3 class="contact__subtitle">Phone</h3>
+                    <span class="contact__text">+91 8446846261</span>
+                    
+                    <h3 class="contact__subtitle">Address</h3>
+                    <span class="contact__text">Maharashtra, India.</span>
+                </div>
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" class="contact__input" placeholder="Name">
+                        <input type="text" class="contact__input" placeholder="Email">
+                    </div>
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                       
+                    <input type="submit" value="Submit"  class="contact__button">
+                </form>
+            </div>
+
+           
+        </section>
+    </main>
+
+    <!----------- footer ------------->
+
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h3 class="footer__title">Atharv Patil</h3>
+                <p class="footer__info">
+                    I'm Atharv Patil and this is my Portfolio Website.
+                </p>
+            </div>
+            <div class="footer__data">
+                <h2 class="footer__title">Explore</h2>
+                <ul >
+                    <li >
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li >
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li >
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li >
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li >
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__data">
+                <h2 class="footer__title">Follow</h2>
+                <a href="" class="footer__social-icon"><i class='bx bxl-github' ></i></a>
+                <a href="" class="footer__social-icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="" class="footer__social-icon"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!----------- scroll reveal js --------->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-
-
-
+    <!-------------- main js  ----------->
     <script src="index.js"></script>
 </body>
 </html>
