@@ -1054,7 +1054,7 @@ img{
     }
 
     .home__scroll{
-        padding: 0;
+        padding: 0 0.5rem;
     } 
 
     .home__img{
