@@ -1053,9 +1053,9 @@ img{
         row-gap: 0;
     }
 
-    /* .home__scroll-link{
-        /* padding:  0; */
-    /* }  */
+    .home__scroll{
+        padding: 0;
+    } 
 
     .home__img{
         width: 300px;
